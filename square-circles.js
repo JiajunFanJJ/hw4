@@ -11,6 +11,7 @@ function draw() {
 
   x.push(mouseX);
   y.push(mouseY);
+  rectMode(CENTER);
 
   for (var i = 0; i < x.length; i = i + 10) {
     rect(x[i], y[i], 1 + (x.length - i), 1 + (x.length - i));
